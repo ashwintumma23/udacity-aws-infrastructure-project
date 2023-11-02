@@ -1,24 +1,17 @@
-﻿Estimate summary
-Upfront cost,Monthly cost,Total 12 months cost,Currency
-0,6483.150000000001,77797.80,USD
-,,* Includes upfront cost
-
-
-Detailed Estimate
 Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
-Reduced Cost Estimate,US East (N. Virginia),Web Servers,Amazon EC2 ,0,722.944,8675.33,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (t3.xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (3000 GB), DT Inbound: Internet (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
-Reduced Cost Estimate,US East (N. Virginia),Application Servers,Amazon EC2 ,0,732.4,8788.80,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (c5.xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (3000 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
-Reduced Cost Estimate,US East (N. Virginia),Database Servers,Amazon RDS for MySQL,0,2095.4,25144.80,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (3000 GB), Quantity (2), Instance type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
-Reduced Cost Estimate,US East (N. Virginia),S3,S3 Standard,0,1150,13800.00,USD,,S3 Standard storage (50000 GB per month)
-Reduced Cost Estimate,US East (N. Virginia),S3,Data Transfer,0,0,0.00,USD,,
-Reduced Cost Estimate,US East (N. Virginia),VPC,VPN Connection,0,0,0.00,USD,,Working days per month (22)
-Reduced Cost Estimate,US East (N. Virginia),VPC,Network Address Translation (NAT) Gateway,0,167.85,2014.20,USD,,Number of NAT Gateways (1)
-Reduced Cost Estimate,US East (N. Virginia),Route 53,Amazon Route 53,0,208,2496.00,USD,,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (2)"
-Reduced Cost Estimate,US East (N. Virginia),Load Balancers,Application Load Balancer,0,600.43,7205.16,USD,,Number of Application Load Balancers (1)
-Reduced Cost Estimate,US East (N. Virginia),Load Balancers,Network Load Balancer,0,454.43,5453.16,USD,,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour), Average number of new TCP connections (10 per second), Average TCP connection duration (30 seconds)"
-Reduced Cost Estimate,US East (N. Virginia),CloudWatch Logs,Amazon CloudWatch,0,351.70001,4220.40,USD,,"Number of Metrics (includes detailed and custom metrics) (100), Number of Dashboards (2), Number of Standard Resolution Alarm Metrics (10), Number of High Resolution Alarm Metrics (10), Number of composite alarms (10), Number of alarms defined with a Metrics Insights query (10), Average number of metrics scanned by each Metrics Insights query (10), Number of Custom/Cross-account events (10), Standard Logs: Data Ingested (100 GB), Logs Delivered to CloudWatch Logs: Data Ingested (500 GB)"
-
-
-
-Acknowledgement
-"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+Reduced_Cost_Estimate,US East (N. Virginia),Web Servers,Amazon EC2,0,540.298,6483.58,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (t3.large), Pricing strategy (Compute Savings Plans 3 Year  None upfront), Enable monitoring (disabled), EBS Storage amount (3000 GB), DT Inbound: Internet (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),Application Servers,Amazon EC2,0,549.9,6598.8,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (c5n.large), Pricing strategy (Compute Savings Plans 3 Year  None upfront), Enable monitoring (enabled), EBS Storage amount (3000 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),Database Servers,Amazon RDS for MySQL,0,2486.4,29836.8,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (3000 GB), Quantity (2), Instance type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (3000 GB), Total Size of Backup Processed for Export (GB) (10000 per month), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for total retention (per vCPU per month) (1.50)"
+Reduced_Cost_Estimate,US East (N. Virginia),S3,S3 Standard,0,690,8280,USD,,S3 Standard storage (30000 GB per month)
+Reduced_Cost_Estimate,US East (N. Virginia),VPC,VPN Connection,0,0,0,USD,,Working days per month (22)
+Reduced_Cost_Estimate,US East (N. Virginia),VPC,Network Address Translation (NAT) Gateway,0,167.85,2014.2,USD,,Number of NAT Gateways (1)
+Reduced_Cost_Estimate,US East (N. Virginia),Route 53,Amazon Route 53,0,208,2496,USD,,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (2)"
+Reduced_Cost_Estimate,US East (N. Virginia),Load Balancers,Application Load Balancer,0,600.43,7205.16,USD,,Number of Application Load Balancers (1)
+Reduced_Cost_Estimate,US East (N. Virginia),Load Balancers,Network Load Balancer,0,454.43,5453.16,USD,,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour), Average number of new TCP connections (10 per second), Average TCP connection duration (30 seconds)"
+Reduced_Cost_Estimate,US East (N. Virginia),CloudWatch Logs,Amazon CloudWatch,0,351.70001,4220.4,USD,,"Number of Metrics (includes detailed and custom metrics) (100), Number of Dashboards (1), Number of Standard Resolution Alarm Metrics (10), Number of High Resolution Alarm Metrics (10), Number of composite alarms (10), Number of alarms defined with a Metrics Insights query (10), Average number of metrics scanned by each Metrics Insights query (10), Number of Custom/Cross-account events (10), Standard Logs: Data Ingested (100 GB), Logs Delivered to CloudWatch Logs: Data Ingested (500 GB)"
+Reduced_Cost_Estimate,US East (N. Virginia),CloudFront,Amazon CloudFront,0,255,3060,USD,,Data transfer out to internet (3000 GB per month)
+,,,,,,,,,
+,,,,,,,,,
+"Remove the S3 Intelligent Tier, S3 Standard - Infrequently accessed and S3 Glacier Deep Archive storage levels, and store 20000 GB less data volume in terms of retention",,,,,,,,,
+Change EC2 instances to use Shared Instances instead of Dedicated Instances,,,,,,,,,
+Change RDS database instance type from db.m1.xlarge to db.m1.large,,,,,,,,,

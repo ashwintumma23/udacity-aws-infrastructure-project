@@ -1,0 +1,23 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Increased_Cost_Estimate,US East (N. Virginia),Web Servers,Amazon EC2,0,4444.826,53337.91,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 6), Advance EC2 instance (t3.2xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (3000 GB), DT Inbound: Internet (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Increased_Cost_Estimate,US East (N. Virginia),Application Servers,Amazon EC2,0,5464.68,65576.16,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 6), Advance EC2 instance (c5n.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (3000 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Increased_Cost_Estimate,US East (N. Virginia),Database Servers,Amazon RDS for MySQL,0,6506.24,78074.88,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (3000 GB), Quantity (2), Instance type (db.m4.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (3000 GB), Total Size of Backup Processed for Export (GB) (35000 per month), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for total retention (per vCPU per month) (1.56), Cost for each additional month of retention (per vCPU per month) (0.0631000000)"
+Increased_Cost_Estimate,US East (N. Virginia),S3,S3 Standard,0,1150,13800,USD,,S3 Standard storage (50000 GB per month)
+Increased_Cost_Estimate,US East (N. Virginia),S3,S3 Intelligent - Tiering,0,231.6,2779.2,USD,,"S3 INT Average Object Size (16 MB), Percentage of Storage in INT-Frequent Access Tier (1), S3 INT storage (10000 GB per month)"
+Increased_Cost_Estimate,US East (N. Virginia),S3,S3 Standard - Infrequent Access,0,125,1500,USD,,S3 Standard-IA storage (10000 GB per month)
+Increased_Cost_Estimate,US East (N. Virginia),S3,S3 Glacier Deep Archive,0,10.03,120.36,USD,,"S3 Glacier Deep Archive Average Object Size (16 MB), S3 Glacier Deep Archive storage (10000 GB per month)"
+Increased_Cost_Estimate,US East (N. Virginia),S3,Data Transfer,0,0,0,USD,,
+Increased_Cost_Estimate,US East (N. Virginia),VPC,VPN Connection,0,0,0,USD,,Working days per month (22)
+Increased_Cost_Estimate,US East (N. Virginia),VPC,Network Address Translation (NAT) Gateway,0,167.85,2014.2,USD,,Number of NAT Gateways (1)
+Increased_Cost_Estimate,US East (N. Virginia),Route 53,Amazon Route 53,0,208,2496,USD,,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (2)"
+Increased_Cost_Estimate,US East (N. Virginia),Load Balancers,Application Load Balancer,0,600.43,7205.16,USD,,Number of Application Load Balancers (1)
+Increased_Cost_Estimate,US East (N. Virginia),Load Balancers,Network Load Balancer,0,454.43,5453.16,USD,,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour), Average number of new TCP connections (10 per second), Average TCP connection duration (30 seconds)"
+Increased_Cost_Estimate,US East (N. Virginia),CloudWatch Logs,Amazon CloudWatch,0,351.70001,4220.4,USD,,"Number of Metrics (includes detailed and custom metrics) (100), Number of Dashboards (1), Number of Standard Resolution Alarm Metrics (10), Number of High Resolution Alarm Metrics (10), Number of composite alarms (10), Number of alarms defined with a Metrics Insights query (10), Average number of metrics scanned by each Metrics Insights query (10), Number of Custom/Cross-account events (10), Standard Logs: Data Ingested (100 GB), Logs Delivered to CloudWatch Logs: Data Ingested (500 GB)"
+Increased_Cost_Estimate,US East (N. Virginia),CloudFront,Amazon CloudFront,0,255,3060,USD,,Data transfer out to internet (3000 GB per month)
+,,,,,,,,,
+,,,,,,,,,
+Increase the number of Web Server and Application Server EC2 Instances from 2 to 6 for faning out requests,,,,,,,,,
+Change instance type of Web Server from t3.large to t3.2xlarge that has higher number of VCPUs,,,,,,,,,
+Change instance type of Application Server from c5n.large to c5n.4xlarge that has higher number of VCPUs,,,,,,,,,
+"For increasing database vertical scale, change instance type from db.m1.xlarge to db.m4.4xlarge",,,,,,,,,
+Keep database snapshots for more number of days by increasing the size for Backup Processed for Export from 10000 GB to 35000 per month,,,,,,,,,
